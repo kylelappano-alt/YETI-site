@@ -46,208 +46,231 @@
 </head>
 <body class="font-sans bg-yeti-light text-yeti-dark antialiased">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-yeti-dark/95 backdrop-blur-sm border-b border-gray-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center space-x-4">
-                    <span class="font-display font-bold text-2xl tracking-wider">YETI</span>
-                    <i data-lucide="x" class="w-4 h-4 text-gray-400"></i>
-                    <span class="font-display font-bold text-xl text-gray-300">DocuSign</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#strategic-vision" class="text-sm font-medium text-gray-300 hover:text-white transition">The Vision</a>
-                    <a href="#capabilities" class="text-sm font-medium text-gray-300 hover:text-white transition">Platform Capabilities</a>
-                    <a href="#next-steps" class="text-sm font-medium text-gray-300 hover:text-white transition">The Path Forward</a>
-                </div>
-                <a href="#next-steps" class="bg-white text-yeti-dark px-5 py-2.5 rounded text-sm font-bold hover:bg-gray-200 transition">
-                    Schedule Review
-                </a>
+    <!-- Auth Screen -->
+    <div id="auth-screen" class="fixed inset-0 z-[100] hero-bg flex items-center justify-center p-4">
+        <div class="bg-yeti-dark/95 backdrop-blur-md p-8 rounded-2xl border border-gray-700 w-full max-w-md text-center shadow-2xl">
+            <div class="flex justify-center items-center space-x-2 mb-6">
+                <span class="font-display font-bold text-xl tracking-wider text-white">YETI</span>
+                <i data-lucide="x" class="w-4 h-4 text-gray-400"></i>
+                <span class="font-display font-bold text-lg text-gray-300">DocuSign</span>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-bg relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-1.5 mb-6 border border-white/20">
-                    <span class="flex h-2 w-2 rounded-full bg-green-400"></span>
-                    <span class="text-xs font-medium tracking-wide uppercase">Custom Prepared for Steven Maske & IT Ops</span>
-                </div>
-                <h1 class="font-display text-5xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
-                    Built for the Wild.<br>
-                    <span class="text-gray-400">Managed with Intelligence.</span>
-                </h1>
-                <p class="text-lg lg:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-                    YETI has tripled its tech stack and expanded across Europe and Asia. Your agreement processes shouldn't rely on manual redlining and rudimentary AI. It's time for a platform that scales with global operations.
-                </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#next-steps" class="bg-white text-yeti-dark px-8 py-4 rounded font-bold text-center hover:bg-gray-100 transition shadow-lg">
-                        Schedule Strategic Review
-                    </a>
-                    <a href="#capabilities" class="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded font-bold text-center transition">
-                        Explore IAM Capabilities
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Strategic Vision (Pain Points vs Solutions) -->
-    <section id="strategic-vision" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
-                <h2 class="text-sm font-bold tracking-widest text-gray-500 uppercase mb-3">The Current Landscape</h2>
-                <h3 class="text-3xl md:text-4xl font-display font-bold text-yeti-dark mb-4">Moving from Tactical to Strategic</h3>
-                <p class="text-gray-600 text-lg">
-                    We know the current CLM ecosystem at YETI feels like a "library" rather than a true workflow engine. Here is how DocuSign IAM bridges the gap between what you have and what an enterprise needs.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Point 1 -->
-                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 fade-in-up shadow-sm">
-                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="download-cloud" class="w-6 h-6"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">The Download/Upload Cycle</h4>
-                    <p class="text-gray-600 text-sm mb-4 pb-4 border-b border-gray-200">
-                        Currently, redlining requires downloading documents, editing locally, and re-uploading them. It's prone to version control issues.
-                    </p>
-                    <div class="flex items-start space-x-3 text-yeti-accent">
-                        <i data-lucide="check-circle-2" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
-                        <p class="text-sm font-medium"><strong>Agreement Desk</strong> allows concurrent, native collaboration and redlining in a single, secure environment.</p>
-                    </div>
-                </div>
-
-                <!-- Point 2 -->
-                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 fade-in-up shadow-sm" style="transition-delay: 100ms;">
-                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="brain-circuit" class="w-6 h-6"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">"Rudimentary" AI</h4>
-                    <p class="text-gray-600 text-sm mb-4 pb-4 border-b border-gray-200">
-                        Basic machine learning that routes documents or relies on simple questionnaires isn't true AI.
-                    </p>
-                    <div class="flex items-start space-x-3 text-yeti-accent">
-                        <i data-lucide="check-circle-2" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
-                        <p class="text-sm font-medium"><strong>Navigator</strong> uses advanced Generative AI to deeply analyze international governing laws, auto-renewals, and terms across your entire repository instantly.</p>
-                    </div>
-                </div>
-
-                <!-- Point 3 -->
-                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 fade-in-up shadow-sm" style="transition-delay: 200ms;">
-                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="git-branch" class="w-6 h-6"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">Rigid Routing Rules</h4>
-                    <p class="text-gray-600 text-sm mb-4 pb-4 border-b border-gray-200">
-                        Simple API calls that trigger at the end of a process limit visibility and don't account for complex, dynamic organizational structures.
-                    </p>
-                    <div class="flex items-start space-x-3 text-yeti-accent">
-                        <i data-lucide="check-circle-2" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
-                        <p class="text-sm font-medium"><strong>Maestro</strong> offers a no-code workflow builder. Automate complex logic (e.g., threshold-based routing to FP&A) seamlessly.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Deep Dive Features -->
-    <section id="capabilities" class="py-24 bg-yeti-light border-y border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center gap-16 fade-in-up mb-24">
-                <div class="w-full md:w-1/2">
-                    <div class="bg-white p-2 rounded-xl shadow-xl border border-gray-100">
-                        <!-- Actual image representation of the AI interface -->
-                        <img src="https://images.ctfassets.net/9pvazpst9iwl/625269148069509/288e3b4ee454d222b08b34b4c0967c1a/ReportsBlogAsset.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';" alt="DocuSign Navigator Interface" class="w-full h-auto object-cover rounded-lg border border-gray-100">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-3xl font-display font-bold mb-4">DocuSign Navigator</h3>
-                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                        Stop treating contracts like flat PDFs. Navigator transforms your agreements into structured data. With YETI operating in nearly 40 countries, Navigator allows you to instantly query your repository: <span class="italic font-medium">"Return every agreement where the governing law is in California"</span> or <span class="italic font-medium">"Show me all vendor renewals requiring 60-day notice in the EU."</span>
-                    </p>
-                    <ul class="space-y-3 text-gray-700">
-                        <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Automated reporting and dashboarding</li>
-                        <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Intelligent clause extraction</li>
-                        <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Multi-language support for global operations</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row-reverse items-center gap-16 fade-in-up">
-                <div class="w-full md:w-1/2">
-                    <div class="bg-white p-2 rounded-xl shadow-xl border border-gray-100">
-                        <!-- Actual image representation of Agreement Desk -->
-                        <img src="https://images.ctfassets.net/0jnmtsdzg6p5/1e11myJF6G9ZDJP2ambhLs/0490b998ca7c4c635cf25a1fb96230ea/agreement-desk-increase-visibility.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';" alt="DocuSign Agreement Desk Interface" class="w-full h-auto object-cover rounded-lg border border-gray-100">
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-3xl font-display font-bold mb-4">Maestro & Agreement Desk</h3>
-                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                        Say goodbye to the "download, redline, re-upload" dance. Agreement Desk provides a centralized workspace for negotiation, empowered by <strong>AI-assisted review</strong> to instantly flag third-party risks against YETI's legal playbooks and suggest pre-approved fallback language. Pair it with Maestro to build logic-based workflows (like routing to specific FP&A contacts based on spend) without writing a single line of code.
-                    </p>
-                    <ul class="space-y-3 text-gray-700">
-                        <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> AI-assisted risk detection and automated redlining</li>
-                        <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> End-to-end process visibility</li>
-                        <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Real-time, concurrent collaboration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Path Forward / Call to Action -->
-    <section id="next-steps" class="py-24 bg-yeti-dark text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-in-up">
-            <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">Ready to Move from Tactical to Strategic?</h2>
-            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-                Let's explore how DocuSign IAM can replace YETI's manual CLM processes with a modern, intelligent workflow engine designed for global scale.
-            </p>
-            
-            <div class="grid md:grid-cols-3 gap-6 mb-12 text-left">
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm">
-                    <div class="w-8 h-8 rounded-full bg-yeti-accent flex items-center justify-center font-bold text-sm mb-4">1</div>
-                    <h4 class="font-bold text-lg mb-2">Technical Deep Dive</h4>
-                    <p class="text-sm text-gray-400">A focused session with IT Ops to map YETI's current API and routing architecture against IAM's native capabilities.</p>
-                </div>
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm">
-                    <div class="w-8 h-8 rounded-full bg-yeti-accent flex items-center justify-center font-bold text-sm mb-4">2</div>
-                    <h4 class="font-bold text-lg mb-2">Custom Demonstration</h4>
-                    <p class="text-sm text-gray-400">We'll build a live YETI workflow using Maestro to show automated routing to FP&A and Legal based on specific criteria.</p>
-                </div>
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm">
-                    <div class="w-8 h-8 rounded-full bg-yeti-accent flex items-center justify-center font-bold text-sm mb-4">3</div>
-                    <h4 class="font-bold text-lg mb-2">Pricing and Value</h4>
-                    <p class="text-sm text-gray-400">Review flexible commercial options and build a custom ROI business case to validate time-savings before committing to a full platform migration.</p>
-                </div>
-            </div>
-
-            <div class="bg-white/10 p-8 rounded-2xl border border-white/20 max-w-2xl mx-auto">
-                <h3 class="text-2xl font-bold mb-4">Let's start the conversation.</h3>
-                <p class="text-gray-300 mb-6">Schedule a 20-minute alignment call with our technical team to see DocuSign IAM in action.</p>
-                <button onclick="window.location.href='mailto:kyle@docusign.com?subject=YETI%20%2B%20DocuSign%20IAM%20Strategic%20Review'" class="w-full sm:w-auto bg-white text-yeti-dark px-8 py-4 rounded font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                    Email Kyle to Schedule Call
+            <h2 class="text-2xl font-display font-bold text-white mb-2">Private Proposal</h2>
+            <p class="text-sm text-gray-400 mb-8">Prepared exclusively for Steven Maske & IT Ops. Please enter your passcode to access.</p>
+            <div class="space-y-4">
+                <input type="password" id="passcode-input" placeholder="Enter Passcode" class="w-full bg-black/50 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-yeti-accent focus:ring-1 focus:ring-yeti-accent transition">
+                <p id="error-message" class="text-red-400 text-sm hidden font-medium">Incorrect passcode. Please try again.</p>
+                <button onclick="checkPasscode()" class="w-full bg-white text-yeti-dark font-bold py-3 rounded-lg hover:bg-gray-200 transition shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                    Access Proposal
                 </button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-black py-12 text-center text-gray-500 text-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-center items-center space-x-2 mb-4">
-                <span class="font-display font-bold text-gray-400">YETI</span>
-                <i data-lucide="x" class="w-3 h-3 text-gray-600"></i>
-                <span class="font-display font-bold text-gray-400">DocuSign</span>
+    <!-- Main Content (Hidden by default until authenticated) -->
+    <div id="main-content" class="hidden opacity-0 transition-opacity duration-1000">
+        <!-- Navigation -->
+        <nav class="fixed w-full z-50 bg-yeti-dark/95 backdrop-blur-sm border-b border-gray-800 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center space-x-4">
+                        <span class="font-display font-bold text-2xl tracking-wider">YETI</span>
+                        <i data-lucide="x" class="w-4 h-4 text-gray-400"></i>
+                        <span class="font-display font-bold text-xl text-gray-300">DocuSign</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#strategic-vision" class="text-sm font-medium text-gray-300 hover:text-white transition">The Vision</a>
+                        <a href="#capabilities" class="text-sm font-medium text-gray-300 hover:text-white transition">Platform Capabilities</a>
+                        <a href="#next-steps" class="text-sm font-medium text-gray-300 hover:text-white transition">The Path Forward</a>
+                    </div>
+                    <a href="#next-steps" class="bg-white text-yeti-dark px-5 py-2.5 rounded text-sm font-bold hover:bg-gray-200 transition">
+                        Schedule Review
+                    </a>
+                </div>
             </div>
-            <p>Prepared specifically for Steven Maske and YETI Coolers, LLC.</p>
-            <p class="mt-2 text-xs">This is a private, custom proposal microsite.</p>
-        </div>
-    </footer>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-bg relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 rounded-full px-4 py-1.5 mb-6 border border-white/20">
+                        <span class="flex h-2 w-2 rounded-full bg-green-400"></span>
+                        <span class="text-xs font-medium tracking-wide uppercase">Custom Prepared for Steven Maske & IT Ops</span>
+                    </div>
+                    <h1 class="font-display text-5xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
+                        Built for the Wild.<br>
+                        <span class="text-gray-400">Managed with Intelligence.</span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                        YETI has tripled its tech stack and expanded across Europe and Asia. Your agreement processes shouldn't rely on manual redlining and rudimentary AI. It's time for a platform that scales with global operations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#next-steps" class="bg-white text-yeti-dark px-8 py-4 rounded font-bold text-center hover:bg-gray-100 transition shadow-lg">
+                            Schedule Strategic Review
+                        </a>
+                        <a href="#capabilities" class="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded font-bold text-center transition">
+                            Explore IAM Capabilities
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Vision (Pain Points vs Solutions) -->
+        <section id="strategic-vision" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                    <h2 class="text-sm font-bold tracking-widest text-gray-500 uppercase mb-3">The Current Landscape</h2>
+                    <h3 class="text-3xl md:text-4xl font-display font-bold text-yeti-dark mb-4">Moving from Tactical to Strategic</h3>
+                    <p class="text-gray-600 text-lg">
+                        We know the current CLM ecosystem at YETI feels like a "library" rather than a true workflow engine. Here is how DocuSign IAM bridges the gap between what you have and what an enterprise needs.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Point 1 -->
+                    <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 fade-in-up shadow-sm">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="download-cloud" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">The Download/Upload Cycle</h4>
+                        <p class="text-gray-600 text-sm mb-4 pb-4 border-b border-gray-200">
+                            Currently, redlining requires downloading documents, editing locally, and re-uploading them. It's prone to version control issues.
+                        </p>
+                        <div class="flex items-start space-x-3 text-yeti-accent">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
+                            <p class="text-sm font-medium"><strong>Agreement Desk</strong> allows concurrent, native collaboration and redlining in a single, secure environment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 fade-in-up shadow-sm" style="transition-delay: 100ms;">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">"Rudimentary" AI</h4>
+                        <p class="text-gray-600 text-sm mb-4 pb-4 border-b border-gray-200">
+                            Basic machine learning that routes documents or relies on simple questionnaires isn't true AI.
+                        </p>
+                        <div class="flex items-start space-x-3 text-yeti-accent">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
+                            <p class="text-sm font-medium"><strong>Navigator</strong> uses advanced Generative AI to deeply analyze international governing laws, auto-renewals, and terms across your entire repository instantly.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 fade-in-up shadow-sm" style="transition-delay: 200ms;">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="git-branch" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Rigid Routing Rules</h4>
+                        <p class="text-gray-600 text-sm mb-4 pb-4 border-b border-gray-200">
+                            Simple API calls that trigger at the end of a process limit visibility and don't account for complex, dynamic organizational structures.
+                        </p>
+                        <div class="flex items-start space-x-3 text-yeti-accent">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
+                            <p class="text-sm font-medium"><strong>Maestro</strong> offers a no-code workflow builder. Automate complex logic (e.g., threshold-based routing to FP&A) seamlessly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Dive Features -->
+        <section id="capabilities" class="py-24 bg-yeti-light border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center gap-16 fade-in-up mb-24">
+                    <div class="w-full md:w-1/2">
+                        <div class="bg-white p-2 rounded-xl shadow-xl border border-gray-100">
+                            <!-- Actual image representation of the AI interface -->
+                            <img src="https://images.ctfassets.net/9pvazpst9iwl/625269148069509/288e3b4ee454d222b08b34b4c0967c1a/ReportsBlogAsset.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';" alt="DocuSign Navigator Interface" class="w-full h-auto object-cover rounded-lg border border-gray-100">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-3xl font-display font-bold mb-4">DocuSign Navigator</h3>
+                        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                            Stop treating contracts like flat PDFs. Navigator transforms your agreements into structured data. With YETI operating in nearly 40 countries, Navigator allows you to instantly query your repository: <span class="italic font-medium">"Return every agreement where the governing law is in California"</span> or <span class="italic font-medium">"Show me all vendor renewals requiring 60-day notice in the EU."</span>
+                        </p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Automated reporting and dashboarding</li>
+                            <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Intelligent clause extraction</li>
+                            <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Multi-language support for global operations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse items-center gap-16 fade-in-up">
+                    <div class="w-full md:w-1/2">
+                        <div class="bg-white p-2 rounded-xl shadow-xl border border-gray-100">
+                            <!-- Actual image representation of Agreement Desk -->
+                            <img src="https://images.ctfassets.net/0jnmtsdzg6p5/1e11myJF6G9ZDJP2ambhLs/0490b998ca7c4c635cf25a1fb96230ea/agreement-desk-increase-visibility.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';" alt="DocuSign Agreement Desk Interface" class="w-full h-auto object-cover rounded-lg border border-gray-100">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-3xl font-display font-bold mb-4">Maestro & Agreement Desk</h3>
+                        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                            Say goodbye to the "download, redline, re-upload" dance. Agreement Desk provides a centralized workspace for negotiation, empowered by <strong>AI-assisted review</strong> to instantly flag third-party risks against YETI's legal playbooks and suggest pre-approved fallback language. Pair it with Maestro to build logic-based workflows (like routing to specific FP&A contacts based on spend) without writing a single line of code.
+                        </p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> AI-assisted risk detection and automated redlining</li>
+                            <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> End-to-end process visibility</li>
+                            <li class="flex items-center"><i data-lucide="arrow-right" class="w-4 h-4 text-yeti-accent mr-3"></i> Real-time, concurrent collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Path Forward / Call to Action -->
+        <section id="next-steps" class="py-24 bg-yeti-dark text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-in-up">
+                <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">Ready to Move from Tactical to Strategic?</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                    Let's explore how DocuSign IAM can replace YETI's manual CLM processes with a modern, intelligent workflow engine designed for global scale.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-12 text-left">
+                    <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm">
+                        <div class="w-8 h-8 rounded-full bg-yeti-accent flex items-center justify-center font-bold text-sm mb-4">1</div>
+                        <h4 class="font-bold text-lg mb-2">Technical Deep Dive</h4>
+                        <p class="text-sm text-gray-400">A focused session with IT Ops to map YETI's current API and routing architecture against IAM's native capabilities.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm">
+                        <div class="w-8 h-8 rounded-full bg-yeti-accent flex items-center justify-center font-bold text-sm mb-4">2</div>
+                        <h4 class="font-bold text-lg mb-2">Custom Demonstration</h4>
+                        <p class="text-sm text-gray-400">We'll build a live YETI workflow using Maestro to show automated routing to FP&A and Legal based on specific criteria.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm">
+                        <div class="w-8 h-8 rounded-full bg-yeti-accent flex items-center justify-center font-bold text-sm mb-4">3</div>
+                        <h4 class="font-bold text-lg mb-2">Pricing and Value</h4>
+                        <p class="text-sm text-gray-400">Review flexible commercial options and build a custom ROI business case to validate time-savings before committing to a full platform migration.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 p-8 rounded-2xl border border-white/20 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Let's start the conversation.</h3>
+                    <p class="text-gray-300 mb-6">Schedule a 20-minute alignment call with our technical team to see DocuSign IAM in action.</p>
+                    <button onclick="window.location.href='mailto:kyle@docusign.com?subject=YETI%20%2B%20DocuSign%20IAM%20Strategic%20Review'" class="w-full sm:w-auto bg-white text-yeti-dark px-8 py-4 rounded font-bold hover:bg-gray-200 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                        Email Kyle to Schedule Call
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black py-12 text-center text-gray-500 text-sm">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-center items-center space-x-2 mb-4">
+                    <span class="font-display font-bold text-gray-400">YETI</span>
+                    <i data-lucide="x" class="w-3 h-3 text-gray-600"></i>
+                    <span class="font-display font-bold text-gray-400">DocuSign</span>
+                </div>
+                <p>Prepared specifically for Steven Maske and YETI Coolers, LLC.</p>
+                <p class="mt-2 text-xs">This is a private, custom proposal microsite.</p>
+            </div>
+        </footer>
+    </div> <!-- End Main Content -->
 
     <script>
         // Safely Initialize Lucide icons
@@ -257,7 +280,44 @@
             console.error('Lucide icons failed to load from the CDN.');
         }
 
-        // Simple scroll animation observer
+        // --- AUTHENTICATION LOGIC ---
+        function checkPasscode() {
+            const input = document.getElementById('passcode-input').value;
+            const errorMsg = document.getElementById('error-message');
+            const authScreen = document.getElementById('auth-screen');
+            const mainContent = document.getElementById('main-content');
+            
+            // Set your desired passcode here
+            if (input === 'YETI-IAM') {
+                // Hide Auth Screen
+                authScreen.classList.add('hidden');
+                
+                // Show Main Content
+                mainContent.classList.remove('hidden');
+                
+                // Small delay to allow display block to apply before changing opacity for smooth fade in
+                setTimeout(() => {
+                    mainContent.classList.remove('opacity-0');
+                    
+                    // Re-trigger scroll animations now that content is visible
+                    document.querySelectorAll('.fade-in-up').forEach((el) => {
+                        observer.observe(el);
+                    });
+                }, 50);
+
+            } else {
+                errorMsg.classList.remove('hidden');
+            }
+        }
+
+        // Listen for "Enter" key on passcode input
+        document.getElementById('passcode-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkPasscode();
+            }
+        });
+
+        // --- SCROLL ANIMATION OBSERVER ---
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -272,10 +332,8 @@
                 }
             });
         }, observerOptions);
-
-        document.querySelectorAll('.fade-in-up').forEach((el) => {
-            observer.observe(el);
-        });
+        
+        // Initial setup for observers is handled after successful login to prevent premature triggering
     </script>
 </body>
 </html>
